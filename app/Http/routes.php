@@ -30,3 +30,9 @@ Route::get('/admin/post/{idPost}', function ($idPost) {
 Route::get('/admin/post/{name}/{section}', function ($nameR, $sectionR) {
     return 'you view post with ' . $nameR . ' ' . $sectionR;
 });
+
+Route::get('/admin/comments/example', array('as' => 'admin.comments', function () {
+    $url = route('admin.comments');
+    return 'something: ' . $url;
+}
+));

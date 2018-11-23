@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'env' => env('APP_ENV', 'production'),
+    'env' => env('APP_ENV', '5lPlycAhOwMOK6juPbjTRS+5/K3YMfUyXeppj2zQqeg'),
 
     /*
     |--------------------------------------------------------------------------
