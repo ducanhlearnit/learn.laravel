@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
-class PortController extends Controller
+class PostsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,7 +15,7 @@ class PortController extends Controller
      */
     public function index()
     {
-        //
+        return 'Somthing text. Display a listing of the resource.';
     }
 
     /**
@@ -25,7 +25,7 @@ class PortController extends Controller
      */
     public function create()
     {
-        //
+        return view('welcome');
     }
 
     /**

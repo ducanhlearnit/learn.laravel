@@ -15,24 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/admin', function () {
-    return 'welcome to admin';
-});
+Route::get('/posts', 'PostsController@index');
 
-Route::get('/admin/categories/add', function () {
-    return 'add to categories';
-});
-
-Route::get('/admin/post/{idPost}', function ($idPost) {
-    return 'you view post ' . $idPost;
-});
-
-Route::get('/admin/post/{name}/{section}', function ($nameR, $sectionR) {
-    return 'you view post with ' . $nameR . ' ' . $sectionR;
-});
-
-Route::get('/admin/comments/example', array('as' => 'admin.comments', function () {
-    $url = route('admin.comments');
-    return 'something: ' . $url;
-}
-));
+Route::get('/posts/create', 'PostsController@create');
