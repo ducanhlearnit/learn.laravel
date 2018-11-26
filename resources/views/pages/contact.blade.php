@@ -33,12 +33,18 @@
             .title {
                 font-size: 96px;
             }
+            p {
+                font-weight: 600;
+            }
         </style>
     </head>
     <body>
         <div class="container">
             <div class="content">
                 <div class="title">contact page</div>
+                <p>name: {{ $name }}</p>
+                <p>email: {{ $email }}</p>
+                <p>phone: {{ $phone }}</p>
             </div>
         </div>
     </body>

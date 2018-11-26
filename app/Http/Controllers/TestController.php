@@ -8,7 +8,7 @@ use App\Http\Requests;
 
 class TestController extends Controller
 {
-    public function contact() {
-        return view('pages/contact');
+    public function contact($name, $email, $phone) {
+        return view('pages/contact', compact('name', 'email','phone'));
     }
 }
