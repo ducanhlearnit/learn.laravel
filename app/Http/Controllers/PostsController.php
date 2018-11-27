@@ -15,7 +15,14 @@ class PostsController extends Controller
      */
     public function index()
     {
-        return 'Somthing text. Display a listing of the resource.';
+        $posts = [
+            'post one',
+            'post two',
+            'post three',
+            'post four',
+            'post five',
+        ];
+        return view('post', compact('posts'));
     }
 
     /**

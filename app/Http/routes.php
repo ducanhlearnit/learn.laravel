@@ -20,3 +20,5 @@ Route::get('/posts', 'PostsController@index');
 Route::get('/posts/create', 'PostsController@create');
 
 Route::get('/contact/{name}/{email}/{phone}','TestController@contact');
+
+Route::get('/about', 'AboutController@index');
